@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.container {
+    height: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn {
+    padding-top: 2rem;
+    transition:1.5s  ease ;
+}
+
+.link-button {
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(to right, rgb(69, 2, 255), rgb(231, 162, 240));
+    padding: 0.8rem 2.4rem;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+.link-button:hover {
+    background: linear-gradient(to right, rgb(20, 18, 143), rgb(93, 14, 104));
+    padding: 1.3rem 2.7rem 0.8rem 2.4rem;
+}
+
+/* NAVBAR */
+
+.navbar {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    text-decoration: none;
+    display: inline-block;
+    color: darkblue;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 1rem 5rem;
+}
+
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    transition: width .3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* SECTION-A */
+
+.section-a {
+    background-image:url("personal-website/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.section-a-inner {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.section-a-inner img{
+    width: 100%;
+    margin: auto;
+}
+
+.section-a-inner h2 {
+    padding-left: 0.6rem;
+    color: darkblue;
+}
+
+
+
+
+/* SECTION-B */
+
+.section-b {
+    background-image:url("personal-website/biography-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.section-b-inner {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.section-b-inner img{
+    width: 100%;
+    margin: auto;
+}
+
+.section-b-inner h2 {
+    padding-left: 0.6rem;
+    color: darkblue;
+}
+
+/* SECTION-C */
+
+.section-c {
+    background-image: url("personal-website/latest-work-bg.png");
+    background-repeat: no-repeat;
+}
+
+.section-c-inner {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.section-c-inner h2{
+    text-align: center;
+}
+
+.main-box {
+    grid-gap: 4rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box-1, .box-2, .box-3 {
+    transition: 1s;
+} 
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 40px black;
+}
+
+.main-box img {
+    width: 100%;
+}
+
+/* SECTION-D */
+
+.section-d {
+    margin: 2rem 0;
+    background-image: url("personal-website/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section-d-inner {
+    height: 600px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.last-work {
+    transform: translateY(70%);
+}
+
+.section-d h2, small, p {
+    padding-top: 2rem;
+}
+
+.section-d-inner h2{
+    color: darkblue;
+}
+
+.d-button {
+    margin-top: 2rem;
+}
+
+.d-button-inner {
+    color: white;
+    padding: 1.5rem 5.3rem;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(69, 2, 255), rgb(225, 53, 248));
+}
+
+.d-button-inner h5 {
+    font-size: 12px;
+}
+
+.d-button-inner h4 {
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+footer h6 {
+    padding-top: 5rem;
+    text-align: center;
+}
