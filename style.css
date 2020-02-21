@@ -91,8 +91,7 @@ p{
 .section-a {
     background-image:url("personal-website/header-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    
+    background-size: 100%;    
 }
 
 .section-a-inner {
@@ -114,14 +113,12 @@ p{
 }
 
 
-
-
 /* SECTION-B */
 
 .section-b {
-    background-image:url("personal-website/biography-bg.png");
+     background-image: url("personal-website/biography-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; 
 
 }
 
@@ -158,6 +155,7 @@ p{
 
 .section-c-inner h2{
     text-align: center;
+    color: darkblue;
 }
 
 .main-box {
@@ -198,7 +196,7 @@ p{
 }
 
 .last-work {
-    transform: translateY(70%);
+    padding-top: 10%;
 }
 
 .section-d h2, small, p {
@@ -215,7 +213,7 @@ p{
 
 .d-button-inner {
     color: white;
-    padding: 1.5rem 5.3rem;
+    padding: 1.5rem 5.3em;
     border: none;
     border-radius: 10px;
     background-image: linear-gradient(to right, rgb(69, 2, 255), rgb(225, 53, 248));
@@ -232,6 +230,86 @@ p{
 /* FOOTER */
 
 footer h6 {
-    padding-top: 5rem;
     text-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width:1150px){
+
+    body {
+        text-align: center;
+    }
+
+    .nav li a{
+        padding: 0.5rem 0.2rem;
+        font-size:1rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container {
+        overflow: auto; 
+        height: 800px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container img {
+        width: 80%;
+    }
+
+    .section-a-img {
+        grid-row: 1/2;
+    }
+
+    .section-c h2 {
+        font-size: 1.8rem;
+    }
+
+    .main-box {
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .box-3 {
+        grid-column: 1/3;
+    }
+    
+
+    .section-d-inner {
+        height: 400px;
+        width: 100%;
+        padding: 0.3rem 0.1rem;
+    }
+
+    .d-button-inner {
+        padding: 1rem 3rem;
+        border-radius: 10px;
+    }
+
+    .section-d h2 {
+        font-size: 2rem;
+    }
+
+    .d-button-inner h5 {
+        font-size: 9px;
+    }
+
+    .d-button-inner h4 {
+        font-size: 15px;
+    }
+
+    .section-d h2, small, p {
+        padding: 0.3rem;
+    }
 }
